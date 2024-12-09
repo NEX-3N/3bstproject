@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Admin Panel</h1>
+    <form id="product-form">
+      <label for="category">หมวดสินค้า:</label>
+      <input type="text" id="category" placeholder="กรอกหมวดสินค้า" required>
+
+      <label for="brand">ชื่อแบรนด์:</label>
+      <input type="text" id="brand" placeholder="กรอกชื่อแบรนด์" required>
+
+      <label for="product-name">ชื่อสินค้า:</label>
+      <input type="text" id="product-name" placeholder="กรอกชื่อสินค้า" required>
+
+      <label for="box-quantity">จำนวนลังเต็ม (Average):</label>
+      <input type="number" id="box-quantity" placeholder="กรอกจำนวนลังเต็ม" required>
+
+      <button type="submit" class="btn">เพิ่มสินค้า</button>
+    </form>
+    <ul id="product-list"></ul>
+  </div>
+
+  <script src="admin.js" defer></script>
+</body>
+</html>
